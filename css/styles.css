@@ -38,7 +38,9 @@ color: var(--dark-txt-color);
 }
 
 
-
+.no-scroll {
+    overflow: hidden;   
+}
 
 .container {
     width: 1200px;
@@ -877,12 +879,11 @@ margin-left: 8px;
     left: 0;
     width: 100%;
     height: 100%;
-    /*background-color: var(--white-bg-color);*/
     border: 1px solid rgba(0, 0, 0, 0.1);
-   opacity: 1;
-   visibility: visible;
-   pointer-events: initial;
-   transition: opacity var(--anim), visibility var(--anim);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transition: opacity var(--anim), visibility var(--anim);
 }
 
 .modal {
@@ -900,7 +901,8 @@ margin-left: 8px;
 .modal-close {
     position: absolute;
     top: 0;
-    right: 0;transform: translate(-8px, 8px);
+    right: 0;
+    transform: translate(-8px, 8px);
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -914,7 +916,7 @@ margin-left: 8px;
   
 }
 
-.backdrop .is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
