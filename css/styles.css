@@ -79,8 +79,7 @@ img {
 .card-set-item {
     flex-basis: calc((100% - var(--margins) * var(--items)) / var(--items));
     margin: calc(var(--margins) / 2);
-    position: relative;
-        overflow: hidden;
+    
 }
 
 /*сітка на флексах фініш*/
@@ -772,12 +771,13 @@ margin-right: 30px;
 
 .portfolio-link {
     text-decoration: none;
+   
 }
 
 
 .portfolio-bg
 {  
-       background-color: var(--white-bg-color);       
+    background-color: var(--white-bg-color);       
     transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
    
 }
@@ -787,6 +787,11 @@ margin-right: 30px;
    
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
+}
+
+.over {
+position: relative;
+overflow: hidden;
 }
 
 .portfolio-overlay {
@@ -801,8 +806,7 @@ background-color: rgba(33, 150, 243, 0.9);
 padding: 63px 24px;
 transition: transform var(--anim);
 width: 100%;
-height: 100%;
-
+overflow: hidden;
 
 } 
 
@@ -815,17 +819,19 @@ height: 100%;
     color: var(--white-txt-color);
 }
 
-.card-set-item:hover .portfolio-overlay {
+.over:hover .portfolio-overlay {
 transform: translateY(0%);
 
 
 }
 .border 
 {
+
 border-left: 1px solid #EEEEEE;
 border-right: 1px solid #EEEEEE;
 border-bottom: 1px solid #EEEEEE;
 padding: 20px 24px;
+
 
 }
 
